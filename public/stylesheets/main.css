@@ -1,0 +1,173 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 46, 0.91)!important;
+    top: 0;
+    z-index: 5;
+}
+
+@media screen and (max-width:768px){
+    .navbar-nav{
+        height: 100vh !important; 
+    }
+}
+
+#brand-navbar{
+    max-width: 65px;
+}
+
+/* LANDING PG */
+.section{
+    padding: 100px auto;
+    margin: 100px auto 0 auto;
+}
+
+#land-face{
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-muscular-man-working-out-in-gym-strong-male-torso-royalty-free-image-924491214-1557166711.jpg');
+    background-color: rgba(0, 0, 0, 0.63);
+    background-size: 160%;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay
+}
+
+#land-face .container .display-2{
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+#land-face .container .container h4{
+    margin: 40px auto;
+    font-style: oblique;
+    color: #ffffff;
+}
+
+#land-face .container .container a{
+    margin: 100px auto 0 auto;
+    color: rgb(96, 220, 255);
+    border-color: rgb(96, 220, 253);
+}
+
+#land-face .container .container a:hover{
+    color: #fff;
+    border-color: rgb(0, 10, 100);
+    background-color: rgb(0, 10, 100);
+    animation: ease-in-out;
+    transition: 400ms;
+}
+
+.invite-stuff{
+    margin: 120px auto;
+    font-size: 1.2rem;
+    color: navy;
+}
+
+.invite-stuff:nth-child(2){
+    color: rgb(0, 97, 13);
+}
+
+.invite-text:nth-child(2){
+    color: navy;
+}
+
+.invite-stuff:nth-child(3){
+    color: red;
+}
+
+.invite-text:nth-child(3){
+    color: navy;
+}
+
+#sign-up-form-link{
+    background-color: rgb(95, 1, 1);
+}
+
+#sign-up-form-link .container .row {
+    color: #ffffffee;
+}
+
+#sign-up-form-link .container .row h1{
+    margin: 100px 0 50px 0;
+    color: #ffffffee;
+    text-transform: uppercase;
+}
+
+#sign-up-form-link .container .row button{
+    margin: 50px 0;
+    color: #ffffffee!important;
+    border-color: #ffffffee!important;
+}
+
+#sign-up-form-link .container .row button:hover{
+    text-decoration: underline;
+    color: maroon!important;
+    border-color: rgb(253, 139, 127)!important;
+    background-color: rgb(253, 139, 127);
+    animation: linear;
+    transition: 400ms;
+}
+
+#copyright{
+    padding-top: 10px;
+    background-color: rgba(0, 0, 46, 1);
+    color: #ffffff;
+}
+
+/* User ID */
+#user-id{
+    text-transform: capitalize;
+}
+
+/* INDEX PROGRAM */
+#program-name-in-index{
+    margin:20px auto;
+}
+
+
+/* SHOW PROGRAM */
+.card-body img{
+    width: 100%;
+}
+.card-body{
+    padding: 0;
+}
+
+.card-body .text-right{
+    padding: 10px 10px 0 10px;
+    margin: 0;
+}
+
+#comment-section{
+    margin-top: 10px;
+}
+
+#comment-column{
+    margin: 5px 10px;
+}
+
+/* Comment Form */
+#comment-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Sign up - Login Page */
+.sign-up-login{
+    width:50%;
+    margin: 30px auto;
+}
+
+/* PROGRAM LISTS */
+#program-list{
+    margin: 0px 10px;
+}
+
+#program-list:nth-child(even){
+    background-color: rgba(22, 174, 194, 0.5);
+}

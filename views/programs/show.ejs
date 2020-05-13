@@ -1,0 +1,51 @@
+<%- include("../partials/header") %>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 section">
+            <h1><a href="/programs" class="">Programs</a></h1>
+            <% allProgram.forEach(element=>{ %>
+                <li class="list-group-item">
+                    <a href="/programs/<%= element._id %>">
+                        <%= element.name  %>
+                    </a>
+                </li>
+            <%}) %> 
+        </div>
+        <div class="col-md-9 col-sm-12 section">
+            <div class="card">
+                <div class="card-body">
+                    <img src="<%= program.image %>" alt="">
+                </div>
+                <div class="card-footer">
+                    <h4><%= program.name %></h4>
+                    <p><%= program.description  %> </p>
+                    <a class="btn btn-outline-info" href="/programs/<%= program._id %>/secretPlan">Get the plan!</a>
+                </div>
+            </div>
+            <div class="card" id="comment-section">
+                <div class="card-body bg-light">
+                    <h5 class="float-left mt-3 mx-2">Reviews</h5>
+                    <div class="text-right">
+                        <a class="btn btn-outline-danger" href="/programs/<%= program._id %>/comments/new">Add new comment</a>
+                    </div>
+                    <hr>
+                    <% program.comments.forEach(program => {%>
+                        <div class="row">
+                            <div class="col-12" id="comment-column">
+                                <strong>
+                                    <%= program.author %> 
+                                </strong>
+                                <p>
+                                    <%= program.text %> 
+                                </p>
+                            </div>
+                        </div>
+                    <%}); %> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer") %>

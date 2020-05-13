@@ -1,0 +1,28 @@
+<%- include("../partials/header") %>
+
+<div class="container section">
+    <div class="jumbotron">
+        <h1>What's the word?</h1>
+        <h1>Let us know!</h1>
+        <p>Your feedback would let us improve our products in the future!</p>
+    </div>
+    <div class="row">
+        <div id="comment-form" class="text-center">
+            <form action="/programs/<%= program._id %>/comments" method="POST">
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input class="form-control" type="text" name="comment[author]" placeholder="Author" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Comment</label>
+                    <input class="form-control" type="text" name="comment[text]" placeholder="Comment goes here" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control btn btn-lg btn-primary btn-block mt-3" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer") %>

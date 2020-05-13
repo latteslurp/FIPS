@@ -1,0 +1,21 @@
+<%- include("../partials/header") %>
+
+<div class="container section">
+    <h1 class="display-3 text-center">Our Programs</h1>
+    <div class="row text-center">
+        <% programs.forEach(program=>{ %>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="<%= program.image %>" style="max-width: 100%;"> 
+                    <div class="card-body">
+                        <h4 id="program-name-in-index"><%= program.name %></h4>
+                    </div>
+                    <a href="/programs/<%= program._id %> " class=" btn btn-info">Details</a>
+                </div>
+            </div>
+        <% }); %> 
+    </div>
+</div>
+
+
+<%- include("../partials/footer") %>

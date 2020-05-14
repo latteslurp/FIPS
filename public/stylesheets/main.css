@@ -41,6 +41,12 @@ body{
     color: rgb(19, 158, 177);
 }
 
+.navbar .navbar-toggler {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 /* LANDING PG */
 .section{
     padding: 100px auto;

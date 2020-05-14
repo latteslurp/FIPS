@@ -37,7 +37,7 @@ body{
     color: rgb(177, 114, 19);
 }
 
-#carrot-toggle:hover{
+#carrot-toggle:hover, #carrot-toggle:active{
     color: rgb(19, 158, 177);
 }
 

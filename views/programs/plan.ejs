@@ -1,20 +1,22 @@
 <%- include("../partials/header") %>
 
-<div class="jumbotron">
-    <h1 class="display-4">Program</h1>
-    <p>Be sure to follow the program accordingly for the best result!</p>
-</div>
-<div class="row">
-    <% plan.plans.forEach(item => { %>
-        <div class="col-12" id="program-list">
-            <strong>
-                <%= item.name %> 
-            </strong>
-            <p>
-                <%= item.detail %> 
-            </p>
-        </div>
-    <%}); %> 
+<div class="container section">
+    <div class="jumbotron">
+        <h1 class="display-4">Program</h1>
+        <p>Be sure to follow the program accordingly for the best result!</p>
+    </div>
+    <div class="row">
+        <% plan.plans.forEach(item => { %>
+            <div class="col-12" id="program-list">
+                <strong>
+                    <%= item.name %> 
+                </strong>
+                <p>
+                    <%= item.detail %> 
+                </p>
+            </div>
+        <%}); %> 
+    </div>
 </div>
 
 

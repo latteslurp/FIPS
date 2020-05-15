@@ -59,7 +59,7 @@ body{
     background-size: 160%;
     background-position: center;
     background-attachment: fixed;
-    background-blend-mode: overlay
+    background-blend-mode: overlay;
 }
 
 #land-face .container .display-2{
